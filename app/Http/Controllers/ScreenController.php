@@ -22,7 +22,6 @@ class ScreenController extends Controller
         $visualizacion = false;
         $componentes = "";
         $n=$h_ctrl->grid4();
-
         if (count($controles) > 0) {
 
             $visualizacion = true;
@@ -36,41 +35,12 @@ class ScreenController extends Controller
                         $sliders = $this->getCMSContent('SLIDER');
                         //get Data Noticias
                         $news = $this->getCMSContent('NOTICIA');
-                        //get Data Convocatorias Academicas
-                        $convocatorias_academicas = $this->getConvocatoriasContent(1);
-                        //get Data Convocatorias Empleo
-                        $convocatorias_empleo = $this->getConvocatoriasContent(2);
                         //Generate Slider
                         $diapositivas = $h_ctrl->Corrousel($sliders);
 
                         //Convocatorias Academicas
                         $div_convocatorias_academicas = "";
 
-                        if(count($convocatorias_academicas)>0){
-                            $convocatorias = "";
-                            foreach($convocatorias_academicas as $new){
-                                $requisitos = $this->getRequisititosContent($new->id);
-                                $convocatorias .=$h_ctrl->CardDialog($new->nombre,$new->archivo,$new->descripcion_convocatoria, $new->enlace, $new->created_at,$h_ctrl->grid1(), $new->id, $requisitos, $usuario, $new->tipo_convocatoria);
-                            }
-                            $titulo_convocatorias = "<div class='cell-sm-12 cell-md-12 cell-lg-12 cell-xl-12 cell-xxl-12' style='text-align: center;'><h1 class='title-noticias'>Convocatorias Academicas</h1></div>";
-                            $div_convocatorias_academicas = $h_ctrl->Div('convovatorias-container','row',$titulo_convocatorias,'display: flex; justify-content: center;','');
-                            $div_convocatorias_academicas .= $h_ctrl->Div('convovatorias-container','row',$convocatorias,'display: flex; justify-content: center;','');
-                        }
-                        //Convocatorias Empleo
-                        $div_convocatorias_empleo = "";
-                        if($perfil != 0) {
-                            if (count($convocatorias_empleo) > 0) {
-                                $convocatorias = "";
-                                $usuario = session()->get('app_idusuario');
-                                foreach ($convocatorias_empleo as $new) {
-                                    $requisitos = $this->getRequisititosContent($new->id);
-                                    $convocatorias .= $h_ctrl->CardDialog($new->nombre, $new->archivo, $new->descripcion_convocatoria, $new->enlace, $new->created_at, $h_ctrl->grid1(), $new->id, $requisitos, $usuario, $new->tipo_convocatoria);
-                                }
-                                $titulo_convocatorias = "<div class='cell-sm-12 cell-md-12 cell-lg-12 cell-xl-12 cell-xxl-12' style='text-align: center;'><h1 class='title-noticias'>Convocatorias de Empleabilidad</h1></div>";
-                                $div_convocatorias_empleo = $h_ctrl->Div('convovatorias-container', 'row', $titulo_convocatorias, 'display: flex; justify-content: center;', '');
-                                $div_convocatorias_empleo .= $h_ctrl->Div('convovatorias-container', 'row', $convocatorias, 'display: flex; justify-content: center;', '');
-                            }
-                        }
                         //Noticias
                         $div_noticias = "";
                         if(count($news)>0){
@@ -209,23 +179,6 @@ class ScreenController extends Controller
         $data = DB::select($query);
         return $data;
     }
-
-    /* public function getRequisititosContent($id_convocatoria){
-        $query = "SELECT
-                    td.nombre AS TIPO_DOC,
-                    r.nombre AS NOMBRE_REQUISITO,
-                    r.descripcion AS DESC_REQUISITO,
-                    r.condicion AS CONDICION,
-                    r.necesita_adjunto AS NECESITA_ADJUNTO
-                FROM logic_requisitos r
-                INNER JOIN logic_convocatorias_requisitos cr ON cr.id_requisito = r.id
-                INNER JOIN logic_convocatorias c ON c.id = cr.id_convocatoria
-                INNER JOIN logic_tipo_documentos td ON td.id = r.tipo_doc
-                WHERE
-                c.id = ".$id_convocatoria;
-        $data = DB::select($query);
-        return $data;
-    } */
 
 
     public function getInfo($vista, $perfil, $usuario, $tabla){

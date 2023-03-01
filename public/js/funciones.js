@@ -280,6 +280,10 @@ function sortButtons(){
     }
 }
 
+$(document).ready(function(){
+    llamarVista('inicio', 'inicio');
+});
+
 function getTable(){
     let view = $('#hdnView').val();
     console.log(view);

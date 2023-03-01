@@ -44,7 +44,7 @@ h4{
 .title-noticias{
     font-family: 'Monserrat Bold' !important;
     margin: 50px 0px 40px 0px !important;
-    color: #edaeb1;
+    color: #7CB4EA;
 }
 
 .pagination .page-link {
@@ -54,13 +54,13 @@ h4{
 
 .titulo-slider{
     color: white !important;
-    background: #7CB4EA !important;
+    background: #b17ceaa3 !important;
     text-align: center;
     padding: 20px !important;
 }
 
 .carousel .carousel-bullets .carousel-bullet.bullet-on {
-    background-color: #fbbcb5 !important;
+    background-color: #7CB4EA !important;
 }
 
 .contenido p{
@@ -298,7 +298,7 @@ a {
 }
 
 #boton-login:hover{
-    background:#FBBCB5 !important;
+    background:#7CB4EA !important;
 }
 
 #enlace{
@@ -340,18 +340,18 @@ a {
 }
 
 .dropdown-toggle .caption{
-    font-family: "Monserrat Bold";
+    font-family: "Monserrat Regular";
 }
 
 
 #vistaFormulario .button{
-    background:#FBBCB5 !important;
+    background:#7CB4EA !important;
     color: black !important;
     font-family: "Monserrat Regular";
 }
 
 #vistaFormulario .button:hover{
-    background:#fd988d !important;
+    background:#7CB4EA!important;
     color: black !important;
     font-family: "Monserrat Regular";
 }
