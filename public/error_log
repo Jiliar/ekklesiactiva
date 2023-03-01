@@ -1,0 +1,13 @@
+[30-Nov-2021 19:22:12 America/Bogota] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.4.0". You are running 7.2.34. in /home/becasboo/app.becasboomerang.com/vendor/composer/platform_check.php on line 24
+[30-Nov-2021 19:22:20 America/Bogota] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.4.0". You are running 7.2.34. in /home/becasboo/app.becasboomerang.com/vendor/composer/platform_check.php on line 24
+[30-Nov-2021 19:22:25 America/Bogota] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.4.0". You are running 7.2.34. in /home/becasboo/app.becasboomerang.com/vendor/composer/platform_check.php on line 24
+[04-Feb-2022 15:57:33 America/Bogota] PHP Fatal error:  During class fetch: Uncaught ParseError: syntax error, unexpected '$h_ctrl' (T_VARIABLE) in /home/becasboo/app.becasboomerang.com/app/Http/Controllers/CrudFunctions.php:151
+Stack trace:
+#0 /home/becasboo/app.becasboomerang.com/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/becasboo/...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#2 /home/becasboo/app.becasboomerang.com/app/Http/Controllers/Controller.php(11): spl_autoload_call('App\\Http\\Contro...')
+#3 /home/becasboo/app.becasboomerang.com/vendor/composer/ClassLoader.php(478): include('/home/becasboo/...')
+#4 /home/becasboo/app.becasboomerang.com/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/becasboo/...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#6 /home/becasboo/app.becasboomerang.com/app/Http/Controllers/ScreenController.php(8): spl_autoload_call('App\\Http\\Contro...')
+#7 /home/becasboo/app.becasboomerang in /home/becasboo/app.becasboomerang.com/app/Http/Controllers/Controller.php on line 11

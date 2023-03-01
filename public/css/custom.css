@@ -1,0 +1,589 @@
+@font-face {
+    font-family: "Monserrat Bold";
+    src: url("../fuentes/MONTSERRAT/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Monserrat Regular";
+    src: url("../fuentes/MONTSERRAT/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Tahoma Regular";
+    src: url("../fuentes/TAHOMA/tahoma.ttf");
+}
+
+.dialog-title{
+    font-family: 'Monserrat Bold' !important;
+    color: #999999;
+}
+
+.dialog-content{
+    font-family: 'Monserrat Regular' !important;
+}
+
+h6{
+    font-weight: bold !important;
+    color:#7CB4EA !important;
+}
+
+h4{
+    font-weight: bold !important;
+    color:#7CB4EA !important;
+}
+
+#container-detalles{
+    text-align: center !important;
+}
+
+.navview .navview-menu li.active a {
+    color: #fff !important;
+    background: #7CB4EA !important;
+}
+
+.title-noticias{
+    font-family: 'Monserrat Bold' !important;
+    margin: 50px 0px 40px 0px !important;
+    color: #edaeb1;
+}
+
+.pagination .page-link {
+    color: rgb(54, 54, 54) !important;
+    font-family: 'Monserrat Regular' !important;
+}
+
+.titulo-slider{
+    color: white !important;
+    background: #7CB4EA !important;
+    text-align: center;
+    padding: 20px !important;
+}
+
+.carousel .carousel-bullets .carousel-bullet.bullet-on {
+    background-color: #fbbcb5 !important;
+}
+
+.contenido p{
+    color: black !important;
+    background: rgb(255, 255, 255, 0.5) !important;
+    text-align: justify !important;;
+    padding: 10px !important;
+    font-family: 'Monserrat Regular' !important;
+}
+
+.contenido-card, .titulo-card{
+    font-family: 'Monserrat Regular' !important;
+    text-align: justify !important;
+}
+
+.controls-piel{
+    color: rgb(255 192 182) !important;
+}
+
+.table.subcompact th, .table.subcompact td, .table.subcompact .th, .table.subcompact .td {
+    text-align: center !important;
+}
+
+.frame .heading{
+    background: #7CB4EA !important;
+    color: white !important;
+    font-family: 'Monserrat Bold' !important;
+    font-size: 18px !important;
+    text-align: center !important;
+}
+
+
+#btnLimpiar:hover{
+    outline-color: #999999 !important;
+    background-color: #999999 !important;
+}
+
+.content .bg-planoC{
+    outline-color: #999999 !important;
+    background-color: #999999 !important;
+    height: 20% !important;
+    padding: 10px 0px 10px 0px !important;
+    margin: 0px 0px 20px 0px !important;
+    font-family: 'Monserrat Bold';
+}
+
+.select .select-input {
+    font-family: 'Monserrat Regular' !important;
+}
+
+.navview-container h2 img{
+    width:90% !important;
+}
+.navview .navview-menu li a{
+    height: 50px !important;
+}
+
+.container_header{
+    width: 100% !important;
+    height: 100% !important;
+    position: relative;
+}
+
+#perfil {
+    border-color: #7CB4EA !important;
+    background-color: #7CB4EA !important;
+    color: white !important;
+    font-family: 'Monserrat Regular';
+}
+
+#perfil:hover{
+    outline-color: #999999 !important;
+    background-color: #999999 !important;
+    color: white !important;
+    font-family: 'Monserrat Regular';
+}
+
+#cerrar{
+    border-color: #eb3e2f !important;
+    background-color: #eb3e2f !important;
+    color: white !important;
+    font-family: 'Monserrat Regular';
+}
+
+#cerrar:hover{
+    outline-color: #999999 !important;
+    background-color: #999999 !important;
+    color: white !important;
+    font-family: 'Monserrat Regular';
+}
+
+.reg_btn_forms {
+    outline-color: #7CB4EA !important;
+    background-color: #7CB4EA !important;
+    color: white !important;
+    font-family: 'Monserrat Regular';
+}
+
+.reg_btn_forms:hover{
+    outline-color: #999999 !important;
+    background-color: #999999 !important;
+    color: white !important;
+    font-family: 'Monserrat Regular';
+}
+
+.update_btn_forms{
+    outline-color: #7CB4EA !important;
+    background-color: #7CB4EA !important;
+    color: white !important;
+    font-family: 'Monserrat Regular';
+}
+
+.update_btn_forms:hover{
+    outline-color: #999999 !important;
+    background-color: #999999 !important;
+    color: white !important;
+    font-family: 'Monserrat Regular';
+}
+
+.del_btn_forms{
+    outline-color: #eb3e2f !important;
+    background-color: #eb3e2f !important;
+    color: white !important;
+    font-family: 'Monserrat Regular';
+}
+
+.del_btn_forms:hover{
+    outline-color: #ec5648 !important;
+    background-color: #ec5648 !important;
+    color: white !important;
+    font-family: 'Monserrat Regular';
+}
+
+.purple_btn_forms{
+    outline-color: #7CB4EA !important;
+    background-color: #7CB4EA !important;
+    color: white !important;
+    font-family: 'Monserrat Regular';
+}
+
+.cuadrado1{
+    background: url('../images/banner-1.jpg') no-repeat 0 50% !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    height: 100% !important;
+    width: 100% !important;
+    text-align: center !important;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+.cuadrado2 h3{
+    font-family: "Monserrat Bold" !important;
+    padding: 100px 0px 100px 0px !important;
+    font-size: 60px !important;
+    color: #000000 !important;
+    text-align:center !important;
+    font-weight:bold !important;
+    z-index: 1 !important;
+}
+
+.input input {
+    font-family: 'Monserrat Regular' !important;
+}
+
+.textarea textarea {
+    font-family: 'Monserrat Regular' !important;
+}
+
+#no-views{
+    font-family: 'Monserrat Regular' !important;
+    text-align:center !important;
+    font-size: 20px !important;
+}
+
+.select .option-list a {
+    color: black !important;
+    font-family: 'Monserrat Regular' !important;
+}
+
+
+.table-info,
+.files .prueba,
+.drop-zone .caption {
+    font-family: 'Monserrat Regular' !important;
+}
+
+.table-component .table-container.horizontal-scroll .table {
+    font-family: 'Monserrat Regular' !important;
+}
+
+
+#interno {
+    padding: 0px 0px;
+    margin: 0px 0px
+}
+#login {
+    margin-top: 5%;
+    padding: 0px 0px;
+    width: 300px;
+    border-style: solid;
+    border-color: #191842;
+    border-width: 4px;
+    border-radius: 8px 8px;
+    background: #bfdbf5;
+}
+
+#login img{
+    padding: 40px 30px !important;
+}
+
+#login input {
+    margin: 2px 2px;
+    width: 90%;
+    height: 35px;
+    text-align: center;
+}
+
+#login h4{
+    color: white !important;
+}
+
+a {
+    text-decoration: none;
+    color: #000000 !important;
+}
+
+#info-login{
+    color:white !important;
+}
+
+#boton-login:hover{
+    background:#FBBCB5 !important;
+}
+
+#enlace{
+    color:#06A694 !important;
+}
+
+#enlace:hover { cursor: pointer; }
+
+#vistaFormulario{
+    background-color: white !important;
+}
+
+.navview-menu li a .caption{
+    font-size: 16px !important;
+}
+
+.menu_subitems li a .caption{
+    font-size: 14px !important;
+}
+
+.navview .navview-menu li {
+    background: #bfdbf5 !important;
+}
+
+.text-small{
+    font-family: "Monserrat Regular";
+}
+
+.prepend {
+    font-family: "Monserrat Regular";
+}
+
+.planoA{
+    font-family: 'Monserrat Bold';
+}
+
+.menu_subitems .caption{
+    font-family: "Monserrat Regular";
+}
+
+.dropdown-toggle .caption{
+    font-family: "Monserrat Bold";
+}
+
+
+#vistaFormulario .button{
+    background:#FBBCB5 !important;
+    color: black !important;
+    font-family: "Monserrat Regular";
+}
+
+#vistaFormulario .button:hover{
+    background:#fd988d !important;
+    color: black !important;
+    font-family: "Monserrat Regular";
+}
+
+#interno{
+    background-color: #999999 !important;
+}
+
+.table.compact th, .table.compact td, .table.compact .th, .table.compact .td {
+    padding: 5px 5px !important;
+    font-family: 'Monserrat Regular' !important;
+}
+
+.sb-purple{
+    background-color: #bfdbf5 !important;
+}
+
+.bg-darkPurple{
+    background-color: #bfdbf5 !important;
+    color: white !important;
+}
+
+
+.bg-darkPurple-hover{
+    background-color: #bfdbf5 !important;
+}
+
+
+.navview .navview-pane{
+    background-color: #bfdbf5 !important;
+}
+
+.navview .navview-menu{
+    background-color: #bfdbf5 !important;
+}
+
+.navview .navview-menu .item-header {
+    color: #ffffff !important;
+    background: #ec3b2e !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+
+.navview .navview-menu li a:hover {
+    background: rgb(219, 219, 219) !important;
+    font-weight: bold !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+
+#example3 {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding: 50px;
+    justify-content: center;
+    }
+    #example3 .char {
+    display: inline-block;
+    background: #06A694;
+    color: #282828;
+    border-bottom: 4px rgb(11, 158, 146) solid;
+    font-size: 48px;
+    padding: 10px 8px 0;
+    text-align: center;
+    box-shadow: 2px 2px 4px #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 4px;
+    position: relative;
+    width: 64px;
+    height: 80px;
+    transform-origin: 50% 6px;
+    }
+    #example3 .char::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #39342e;
+    left: 50%;
+    top: 6px;
+    margin-left: -4px;
+    }
+    #example3 .char.te-odd {
+    margin-top: 3px;
+    }
+    #example3 .char.te-even {
+    }
+    #example3 .ts-M {
+    animation: skew 2s linear infinite;
+    }
+    #example3 .ts-e {
+    animation: skew-reverse 2.2s linear infinite;
+    }
+    #example3 .ts-t {
+    animation: skew 3s linear infinite;
+    }
+    #example3 .ts-r {
+    animation: skew-reverse 2.8s linear infinite;
+    }
+    #example3 .ts-o {
+    animation: skew-reverse 3.2s linear infinite;
+    }
+    #example3 .ts-4 {
+    animation: skew 1.9s linear infinite;
+    }
+    @keyframes skew {
+    0% {
+        transform: skew(-10deg, 10deg)
+    }
+    25% {
+        transform: skew(0deg, 0deg)
+    }
+    50% {
+        transform: skew(8deg, -8deg);
+    }
+    75% {
+        transform: skew(0deg, 0deg);
+    }
+    100% {
+        transform: skew(-10deg, 10deg)
+    }
+    }
+    @keyframes skew-reverse {
+    0% {
+        transform: skew(8deg, -8deg)
+      }
+      25% {
+          transform: skew(0deg, 0deg)
+      }
+      50% {
+          transform: skew(-10deg, 10deg);
+      }
+      75% {
+          transform: skew(0deg, 0deg);
+      }
+      100% {
+          transform: skew(8deg, -8deg)
+      }
+    }
+
+.eval-container{
+    font-family: 'Monserrat Regular';
+}
+
+.criterios-container{
+    font-family: 'Monserrat Bold' !important;
+}
+
+.option-list{
+    font-size: 13px !important;
+}
+
+.app-bar-name{
+    font-family: 'Monserrat Bold';
+    color: white;
+}
+.bg-darkPurple{
+    font-family: 'Monserrat Regular';
+}
+
+.suggest-box .input{
+    display:none !important;
+}
+
+.logo-title{
+    background: #7CB4EA !important;
+}
+
+.navview .pull-button {
+    height: 54px !important;
+    width: 52px !important;
+    background: #7CB4EA !important;
+}
+
+.boton-movil{
+    background: #7CB4EA !important;
+    color: white !important;
+}
+
+.caption{
+    color:#141414 !important;
+}
+
+.container-button-movil{
+    background: #7CB4EA !important;
+}
+
+button .caption{
+    color: white !important;
+    font-weight: bold;
+}
+
+.name_visibility{
+    font-family: 'Monserrat Bold' !important;
+}
+
+.active a .caption{
+    color: white !important;
+}
+
+.active a .caption:hover{
+    color:#7CB4EA  !important;
+}
+
+.text-muted {
+    color: #000000 !important;
+}
+
+.text-muted:hover {
+    color: #777777 !important;
+}
+
+.data-box div {
+    color:#7CB4EA  !important;
+}
+
+
+.bg-darkPurple .name_visibility {
+    color: #777777 !important;
+    font-family: 'Monserrat Bold' !important;
+}
+
+.bg-darkPurple div {
+    color: #777777 !important;
+}
+
+.reduce-1 {
+    font-size: 1.em !important;
+    font-family: 'Monserrat Bold' !important;
+    color: black !important;
+}

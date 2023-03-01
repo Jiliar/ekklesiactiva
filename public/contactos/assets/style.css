@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Monserrat Bold";
+    src: url("fuentes/MONTSERRAT/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Monserrat Regular";
+    src: url("fuentes/MONTSERRAT/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Tahoma Regular";
+    src: url("fuentes/TAHOMA/tahoma.ttf");
+}
+
+:root {
+    --color-dark: #15181f;
+    --color-dark-x: #2d343f;
+    --color-dark-xx: #1f232b;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
+}
+
+body {
+    font-family: 'Monserrat Bold', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    background-color: var(--color-grey);
+    color: var(--color-light);
+    letter-spacing: .05rem;
+    overflow-y: hidden;
+}
+
+.font-weight-bold {
+    color: #939393 !important;
+}
+
+#form-container{
+    background: #ffffff !important;
+}
+
+.bg-light {
+    background-color: var(--color-light)!important;
+}
+
+.bg-dark {
+    background-color: var(--color-dark)!important;
+}
+
+.p-6 {
+    padding: 2rem 3rem 2rem 3rem;
+
+}
+
+#title-form{
+    color: #7cb4ea !important;
+    font-size: 3rem !important;
+}
+
+.contact-box {
+    /*padding: 1rem;*/
+}
+
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+    background: #7cb4ea !important;
+    border: #7cb4ea !important;
+    color: black;
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--color-dark-xx);
+}
+
+select{
+    height: 3.8rem !important;
+}
+
+.form-control {
+    background-color: var(--color-light);
+    border: 2px solid var(--color-dark-xx);
+    border-radius: .2rem;
+    padding: 1rem 1rem;
+}
+
+.register-bg {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.register2-bg {
+    background-image: url('images/hero2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.register3-bg {
+    background-image: url('images/hero3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.testiomonial {
+    bottom: 10px
+}
+
+.error{
+    padding: 15px;
+    color: red;
+    text-align: center;
+    display:none;
+}
+
+.logo {
+    top: 10px
+}
+
+@media (max-width: 575.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .contact-box {
+        padding: 0;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .register-bg {
+        min-height: 50vh;
+    }
+}
+
+.text-muted {
+    color: #939393!important;
+}
+
+body{
+    overflow-y: scroll;
+}
+
+button{
+    margin:5px;
+}
